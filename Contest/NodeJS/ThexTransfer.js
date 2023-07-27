@@ -54,8 +54,7 @@ function main() {
   q = parseInt(readLine().split(' ')[0])
 
   for(let i = 0, tmp; i < q; i++) {
-    tmp = readLine().split(' ').map(x => parseInt(x))
-    tours.push(tmp.splice(1))
+    tours.push(readLine().split(' ').map(x => parseInt(x)))
   }
   
   console.log(solve(n, m, roads, q, tours));
