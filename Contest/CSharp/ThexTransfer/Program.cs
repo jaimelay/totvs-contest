@@ -6,7 +6,7 @@ namespace ThexTransfer
 {
     class Program
     {
-        private static int Solve(int n, int m, List<List<int>> routes, int q, List<List<int>> tours)
+        private static void Solve(int n, int m, List<List<int>> routes, int q, List<List<int>> tours)
         {
             // Complete este metodo para resolver a questao ThexTransfer
         }
@@ -33,8 +33,8 @@ namespace ThexTransfer
                 var tour = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToList();
                 tours.Add(tour);
             }
-            
-            Console.WriteLine(Solve(n, m, routes, q, tours));
+
+            Solve(n, m, routes, q, tours);
         }
     }
 }

@@ -6,7 +6,7 @@ namespace ThexBooking
 {
     class Program
     {
-        private static string Solve(int n, int q, int k, List<List<int>> rooms)
+        private static void Solve(int n, int q, int k, List<List<int>> rooms)
         {
             // Complete este metodo para resolver a questao ThexBooking
         }
@@ -21,8 +21,8 @@ namespace ThexBooking
             {
                 rooms.Add(Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToList());
             }
-            
-            Console.WriteLine(Solve(n, q, k, rooms));
+
+            Solve(n, q, k, rooms);
         }
     }
 }

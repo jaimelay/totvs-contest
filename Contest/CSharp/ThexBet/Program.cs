@@ -6,7 +6,7 @@ namespace ThexBet
 {
     class Program
     {
-        private static long Solve(int n, int m, List<List<int>> bets)
+        private static void Solve(int n, int m, List<List<int>> bets)
         {
             // Complete este metodo para resolver a questao ThexBet
         }
@@ -24,8 +24,8 @@ namespace ThexBet
                 var bet = Console.ReadLine().Split(" ").Select(x => Convert.ToInt32(x)).ToList();
                 bets.Add(bet);
             }
-            
-            Console.WriteLine(Solve(n, m, bets));
+
+            Solve(n, m, bets);
         }
     }
 }
